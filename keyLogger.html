@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heading {
+        border: 2px solid black;
+        width: fit-content;
+    }
+
+    .click {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #log,
+    #state {
+        width: 500px;
+        height: 100px;
+        justify-content: space-evenly;
+        border: 2px solid black;
+    }
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+        background-color: rgb(255, 147, 24);
+    }
+</style>
+
+<body>
+    <center>
+        <h4 class="heading">Key Logger</h4>
+        <div class="click">
+            <button id="button_one">Start loggin keypress</button>
+            <button id="button_two">End loggin keypress</button>
+        </div>
+        <br>
+        <div class="button-container">
+            <div id="log"></div>
+            <div id="state"></div>
+        </div>
+    </center>
+    <script src="index.js"></script>
+</body>
+
+</html>
